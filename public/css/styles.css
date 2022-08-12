@@ -1,0 +1,301 @@
+  @font-face {
+    font-family: 'IRSans';
+    src: url('fonts/IRSans.eot');
+    src: url('fonts/IRSans.eot') format('embedded-opentype'),
+         url('fonts/IRSans.woff2') format('woff2'),
+         url('fonts/IRSans.woff') format('woff'),
+         url('fonts/IRSans.ttf') format('truetype'),
+         url('fonts/IRSans.svg#persian-akhbarregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+.container-xxl{
+    /* --bs-gutter-x: 0; */
+    font-family: IRSans;
+}
+header{
+    background-color: #0a71aa;
+    height: 50px;
+    padding: 12px, 16px, 12px, 34px;
+   
+}
+.navbar{
+    --bs-navbar-padding-x:0;
+    --bs-navbar-padding-y:0;
+}
+.head-bg{
+    background: url('bg.png') no-repeat; 
+    background-size: cover;
+    padding-top: 50px;
+}
+.second-bg{
+    background:  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 88.02%);
+    background-size: cover;
+    min-height: 162px;
+    padding-top: 50px;
+}
+.head-bg > div{
+    padding: 10px 20px;
+}
+.filter-btn button{
+    border: 1px solid #0a71aa;
+}
+.tour-card{
+    background-color: #0a71aa;
+    margin:1rem auto;
+}
+/* .card img{
+    margin: 1.5em auto;
+} */
+.tour-card button{
+    background-color: #d0e4ef;
+    font-size:12px;
+}
+.tour-card p{
+    font-weight:500;
+    font-size:12px;
+    line-height:18.78px;
+    text-align:Center;
+    color:#fff;
+}
+.tour h2{
+    margin:1rem auto;
+    text-align: center;
+}
+.carousel-indicators {
+    bottom: -60px;
+}
+footer{
+    background-color: #0a71aa;
+}
+.list li{
+    text-decoration: none;
+    list-style: none;
+}
+.list a{
+    color:#fff;
+    font-size: 12px;
+}
+.footer h4,img{
+    color:#fff;
+    font-size:12px;
+    padding-bottom: 1rem;
+}
+.footer p{
+    color:#fff;
+    font-size:12px;
+    padding-bottom: 1rem;
+}
+
+/*******************tour-detail***********/
+.detail{
+ margin:5px auto;
+}
+
+.detail{
+ height: 55px;
+ width: 162px;;
+ border: 1px solid #0A71AA;
+ border-radius: 5px;
+ font-size:12px;
+}
+.detail h4{
+    color:#0A71AA;
+    font-size:12px;
+    font-weight: bold;
+    line-height: 15px;
+
+}
+.icon-detail{
+    text-align: left;
+}
+
+.more-detail{
+    border: 0.5px solid #0A71AA;
+    background: #EAF3F8;
+    border-radius: 8px;
+}
+.more-detail h4{
+    color:#0A71AA;
+    font-size:12px;
+    font-weight: bold;
+    padding: 10px;
+}
+.more-detail ul li{
+    font-size:12px;
+}
+.more-detail ul li::before {
+    content: "\2022";
+    color:#0A71AA;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    
+  }
+@media (min-width: 767.98px){
+    .detail{
+        width:40%;
+    }
+}
+/***************end tour-detail************/
+/*******************register-page***********/
+
+.form input{
+    height:50px;
+    font-size:12px;
+    margin-top:15px;
+}
+.btn-num{
+     background-color: #0A71AA;
+     border-radius: 5px;
+     color:#fff !important;
+     cursor: pointer;
+}
+.plus{
+    padding:2px 10px;
+}
+.minus{
+    padding:2px 13px;
+}
+#target,#targetchild{
+    pointer-events: none;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    text-align: center;
+    }
+.num span{
+    color:darkgray;
+}
+.num{
+    font-size:12px;
+}
+.num label{
+    margin-top:13%;
+}
+
+/**************end-register-page***********/
+
+/*************reserve page**********************/
+
+
+
+  input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(3em + 1px);
+    margin: 0 0 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #fff;
+    resize: none;
+    outline: none;
+    border-radius:8px;
+  }
+  
+  input[type="text"]{
+    border-color: #00bafa;
+  }
+  input[type="text"]+ label[placeholder]:before {
+    color: #00bafa;
+  }
+    input[type="text"]+ label[placeholder]:before {
+    transition-duration: .2s;
+    transform: translate(0, -1.5em) scale(0.9, 0.9);
+  }
+  
+  input[type="text"]+ label[placeholder][alt]:before {
+    content: attr(alt);
+  }
+  
+  input[type="text"] + label[placeholder] {
+    color:#9E9E9E;
+    font-size:8px;
+    /* display: block; */
+    pointer-events: none;
+    line-height: 1em;
+    /* margin-top:-55px; */
+    /* margin-bottom: calc((3em - 1em) + 2px); */
+    position: relative;
+    top:-65px;
+  }
+  
+  input[type="text"]+ label[placeholder]:before {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 calc(1em + 2px);
+    padding: 0 2px;
+    color: #898989;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .file{
+    border:2px dotted #c79945;
+    border-radius:8px;
+    padding:10px;
+    font-size: 1rem;
+  }
+  .file-label {
+    cursor: pointer;
+    color:#c79945;
+ }
+ .file-label img{
+    margin-top:13px;
+ }
+ 
+ #upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+ }
+ .loan{
+    padding: 5px;
+ }
+ .loan label{
+    font-size:12px;
+ }
+ .teammate{
+    color:#0A71AA;
+    margin-top: 20px;
+ }
+ .teammate img{
+    position: relative;
+    left:-80%;
+ }
+ .radio-age > div{
+    border:1px solid #0A71AA;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+
+ }
+ .radio-age > div input{
+    margin-right: 10px;
+    accent-color:#0A71AA;
+    
+ }
+ .radio-age > div label{
+    margin-top:14px;
+    margin-right: 2px;
+    font-size:12px;
+ }
+ .team-group input{
+    font-size:12px;
+    height: 50px;
+ }
+  /******************************end-reserve page****************/
+ /******************************end-account page****************/
+
+.link-account{
+    margin-right:calc(20vw + 10%);
+}
+ /******************************end-account page****************/
+ .btn-light{
+    border: 1px solid #0A71AA;
+    color:#0A71AA
+ }
